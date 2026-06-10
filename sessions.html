@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Online Circles &amp; Sessions | Veechi Shahi - Global Wellness Coach</title>
+<meta content="Join Veechi Shahi for transformative online circles, 1:1 coaching, Mann Shuddhi sessions, and guided meditations in a sacred digital sanctuary." name="description"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:wght@400;700&amp;family=Montserrat:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "inverse-on-surface": "#f3f0eb",
+                    "surface-container-highest": "#e5e2dd",
+                    "outline-variant": "#dcc0c5",
+                    "primary-fixed-dim": "#ffb1c4",
+                    "surface-variant": "#e5e2dd",
+                    "soft-gold": "#D4AF37",
+                    "on-secondary-fixed": "#2d1225",
+                    "on-primary-fixed-variant": "#851c44",
+                    "surface-dim": "#dcdad5",
+                    "surface-container": "#f0ede9",
+                    "on-secondary-container": "#7b586e",
+                    "on-background": "#1c1c19",
+                    "background": "#fcf9f4",
+                    "error-container": "#ffdad6",
+                    "on-primary-fixed": "#3f001a",
+                    "inverse-surface": "#31302d",
+                    "secondary-container": "#ffd3ed",
+                    "on-surface": "#1c1c19",
+                    "surface-container-low": "#f6f3ee",
+                    "on-primary-container": "#ffd8e0",
+                    "ivory-base": "#FCFAF7",
+                    "surface-container-high": "#ebe8e3",
+                    "error": "#ba1a1a",
+                    "warm-beige": "#F2E8DF",
+                    "on-error": "#ffffff",
+                    "on-error-container": "#93000a",
+                    "tertiary-fixed-dim": "#ffb59b",
+                    "on-tertiary-fixed-variant": "#6f3722",
+                    "on-secondary-fixed-variant": "#5d3d52",
+                    "surface-container-lowest": "#ffffff",
+                    "secondary-fixed": "#ffd8ee",
+                    "surface": "#fcf9f4",
+                    "tertiary": "#763d27",
+                    "surface-bright": "#fcf9f4",
+                    "tertiary-fixed": "#ffdbcf",
+                    "terracotta": "#AC3B61",
+                    "deep-plum": "#4A2C40",
+                    "outline": "#897176",
+                    "on-primary": "#ffffff",
+                    "on-tertiary": "#ffffff",
+                    "on-surface-variant": "#564246",
+                    "surface-tint": "#a4355b",
+                    "on-tertiary-fixed": "#380d00",
+                    "primary": "#8d2249",
+                    "tertiary-container": "#93543d",
+                    "on-secondary": "#ffffff",
+                    "secondary": "#76546a",
+                    "on-tertiary-container": "#ffdbcf",
+                    "primary-fixed": "#ffd9e0",
+                    "primary-container": "#ac3b61",
+                    "secondary-fixed-dim": "#e5bad4",
+                    "inverse-primary": "#ffb1c4"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "section-gap-lg": "160px",
+                    "section-gap-md": "80px",
+                    "gutter": "24px",
+                    "container-max": "1280px",
+                    "margin-desktop": "80px",
+                    "margin-mobile": "24px"
+            },
+            "fontFamily": {
+                    "label-md": ["Montserrat"],
+                    "label-lg": ["Montserrat"],
+                    "body-lg": ["Montserrat"],
+                    "headline-md": ["Libre Caslon Text"],
+                    "display-lg-mobile": ["Libre Caslon Text"],
+                    "body-md": ["Montserrat"],
+                    "headline-lg": ["Libre Caslon Text"],
+                    "headline-lg-mobile": ["Libre Caslon Text"],
+                    "display-lg": ["Libre Caslon Text"]
+            },
+            "fontSize": {
+                    "label-md": ["12px", {"lineHeight": "16px", "letterSpacing": "0.05em", "fontWeight": "500"}],
+                    "label-lg": ["14px", {"lineHeight": "20px", "letterSpacing": "0.1em", "fontWeight": "600"}],
+                    "body-lg": ["18px", {"lineHeight": "32px", "letterSpacing": "0.03em", "fontWeight": "300"}],
+                    "headline-md": ["32px", {"lineHeight": "40px", "fontWeight": "400"}],
+                    "display-lg-mobile": ["40px", {"lineHeight": "48px", "letterSpacing": "-0.01em", "fontWeight": "400"}],
+                    "body-md": ["16px", {"lineHeight": "28px", "letterSpacing": "0.02em", "fontWeight": "400"}],
+                    "headline-lg": ["48px", {"lineHeight": "56px", "fontWeight": "400"}],
+                    "headline-lg-mobile": ["32px", {"lineHeight": "40px", "fontWeight": "400"}],
+                    "display-lg": ["64px", {"lineHeight": "72px", "letterSpacing": "-0.02em", "fontWeight": "400"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+        .glass-card {
+            background: rgba(252, 250, 247, 0.7);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+        }
+        .fade-in {
+            animation: fadeIn 1.2s ease-out forwards;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .bg-mesh {
+            background-color: #FCFAF7;
+            background-image: 
+                radial-gradient(at 0% 0%, rgba(172, 59, 97, 0.05) 0px, transparent 50%),
+                radial-gradient(at 100% 0%, rgba(212, 175, 55, 0.05) 0px, transparent 50%);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-surface selection:bg-terracotta/20 selection:text-terracotta">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 backdrop-blur-xl bg-ivory-base/80 dark:bg-deep-plum/80 shadow-sm">
+<div class="flex justify-between items-center px-margin-mobile md:px-margin-desktop h-20 w-full mx-auto">
+<div class="flex items-center gap-4">
+<button class="md:hidden text-terracotta dark:text-primary-fixed-dim" id="menu-toggle">
+<span class="material-symbols-outlined">menu</span>
+</button>
+<a class="font-headline-md text-headline-md text-primary dark:text-primary-fixed tracking-tight" href="/">Veechi Shahi</a>
+</div>
+<nav class="hidden md:flex gap-gutter items-center">
+<a class="font-label-lg text-label-lg text-on-surface-variant dark:text-surface-variant hover:text-terracotta dark:hover:text-soft-gold transition-colors duration-300" href="#">Meet Veechi</a>
+<a class="font-label-lg text-label-lg text-on-surface-variant dark:text-surface-variant hover:text-terracotta dark:hover:text-soft-gold transition-colors duration-300" href="#">Sanctuary</a>
+<a class="font-label-lg text-label-lg text-terracotta dark:text-soft-gold font-semibold border-b-2 border-soft-gold transition-colors duration-300" href="#">Online Sessions</a>
+<a class="font-label-lg text-label-lg text-on-surface-variant dark:text-surface-variant hover:text-terracotta dark:hover:text-soft-gold transition-colors duration-300" href="#">Retreats</a>
+</nav>
+<button class="bg-terracotta text-white px-6 py-2.5 rounded-full font-label-lg text-label-lg hover:bg-primary transition-all active:scale-95 shadow-md">
+                Book Session
+            </button>
+</div>
+</header>
+<!-- Mobile Navigation Drawer -->
+<div class="fixed inset-y-0 left-0 z-[60] flex flex-col h-full w-80 rounded-r-xl bg-ivory-base dark:bg-deep-plum shadow-xl translate-x-[-100%] transition-transform duration-300" id="drawer">
+<div class="p-8 border-b border-outline-variant/20">
+<div class="flex justify-between items-center">
+<span class="font-headline-md text-headline-md text-primary">Veechi Shahi</span>
+<button class="text-on-surface-variant" id="close-drawer">
+<span class="material-symbols-outlined">close</span>
+</button>
+</div>
+</div>
+<nav class="flex flex-col py-6">
+<a class="flex items-center gap-4 text-on-surface-variant dark:text-surface-variant mx-4 my-1 px-6 py-3 hover:bg-warm-beige dark:hover:bg-surface-variant rounded-full font-label-lg text-label-lg transition-all" href="#">
+<span class="material-symbols-outlined">self_improvement</span> Meet Veechi
+            </a>
+<a class="flex items-center gap-4 text-on-surface-variant dark:text-surface-variant mx-4 my-1 px-6 py-3 hover:bg-warm-beige dark:hover:bg-surface-variant rounded-full font-label-lg text-label-lg transition-all" href="#">
+<span class="material-symbols-outlined">spa</span> Sanctuary of Self
+            </a>
+<a class="flex items-center gap-4 bg-secondary-container dark:bg-secondary text-on-secondary-container dark:text-on-secondary rounded-full mx-4 my-1 px-6 py-3 font-label-lg text-label-lg" href="#">
+<span class="material-symbols-outlined">video_call</span> Online Sessions
+            </a>
+<a class="flex items-center gap-4 text-on-surface-variant dark:text-surface-variant mx-4 my-1 px-6 py-3 hover:bg-warm-beige dark:hover:bg-surface-variant rounded-full font-label-lg text-label-lg transition-all" href="#">
+<span class="material-symbols-outlined">travel_explore</span> Retreats
+            </a>
+<a class="flex items-center gap-4 text-on-surface-variant dark:text-surface-variant mx-4 my-1 px-6 py-3 hover:bg-warm-beige dark:hover:bg-surface-variant rounded-full font-label-lg text-label-lg transition-all" href="#">
+<span class="material-symbols-outlined">business_center</span> Corporate
+            </a>
+<a class="flex items-center gap-4 text-on-surface-variant dark:text-surface-variant mx-4 my-1 px-6 py-3 hover:bg-warm-beige dark:hover:bg-surface-variant rounded-full font-label-lg text-label-lg transition-all" href="#">
+<span class="material-symbols-outlined">mail</span> Contact
+            </a>
+</nav>
+</div>
+<div class="fixed inset-0 bg-black/20 backdrop-blur-sm z-50 hidden opacity-0 transition-opacity duration-300" id="drawer-overlay"></div>
+<main class="bg-mesh">
+<!-- Hero Section -->
+<section class="relative min-h-[80vh] flex items-center pt-20">
+<div class="absolute inset-0 z-0">
+<img alt="Healing sanctuary space" class="w-full h-full object-cover opacity-60" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCHAuPdonOeq5S1JovAdpECOqZ1zCAUFxTMNngF01zyjFKdw4-AhuoGnaU7SvwNKRWX8Qoa5upJtK01mB-16NaPwx-PK9TFrZMzdu3i2JFU3nRBysq3xBBKbOFYZA20BRRFu-l3lTq2qo8qaZwu1_oN9eG2l8CFXdPPuWLzPYyBihAtA9nPFmbWjqULDa9iqDb87OpvLPbYX6RWfGo237dSM81LIK1xB2-55otugJW2gzqPpdGeR94wqTYBgSFOCvnz30MbNb0lXQI"/>
+<div class="absolute inset-0 bg-gradient-to-r from-ivory-base via-ivory-base/40 to-transparent"></div>
+</div>
+<div class="container mx-auto px-margin-mobile md:px-margin-desktop relative z-10">
+<div class="max-w-2xl fade-in">
+<span class="inline-block bg-warm-beige text-terracotta px-4 py-1 rounded-full font-label-lg text-label-lg mb-6 tracking-widest uppercase">Sacred Digital Space</span>
+<h1 class="font-display-lg text-display-lg-mobile md:text-display-lg text-deep-plum mb-8 leading-tight">Online Circles &amp; <br/><span class="text-terracotta italic">Sessions</span></h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-10 max-w-lg">
+                        Distance is but a thought. Experience transformative wellness through virtual portals designed to nourish your spirit, anywhere in the world.
+                    </p>
+<div class="flex flex-col sm:flex-row gap-4">
+<button class="bg-terracotta text-white px-10 py-4 rounded-full font-label-lg text-label-lg hover:bg-primary transition-all shadow-xl hover:-translate-y-1">
+                            Book an Online Session
+                        </button>
+<button class="border-2 border-deep-plum text-deep-plum px-10 py-4 rounded-full font-label-lg text-label-lg hover:bg-deep-plum hover:text-white transition-all">
+                            View Offerings
+                        </button>
+</div>
+</div>
+</div>
+</section>
+<!-- Offerings Grid (Bento Style) -->
+<section class="py-section-gap-lg container mx-auto px-margin-mobile md:px-margin-desktop">
+<div class="text-center mb-section-gap-md max-w-3xl mx-auto">
+<h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-deep-plum mb-6">Our Virtual Offerings</h2>
+<div class="w-24 h-1 bg-soft-gold mx-auto mb-8"></div>
+<p class="font-body-lg text-body-lg text-on-surface-variant">Each session is a curated journey of self-discovery, blending ancient wisdom with modern psychological insights.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-12 gap-8">
+<!-- 1:1 Coaching -->
+<div class="md:col-span-8 group relative overflow-hidden rounded-xl h-[450px] shadow-lg transition-transform hover:-translate-y-2">
+<img class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="A peaceful portrait of a woman in a high-end, minimalist home office with large windows, soft morning light filtering through. The setting is clean and airy, using ivory and warm beige tones. She looks focused and empathetic, capturing the essence of professional 1:1 coaching. The mood is calm, professional, and intimate." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDknQjFG6IKkGGnJ6ZEna8rjw4PYWu5XUP4Vu-Qll9slQA19-vCckKTPXguO0v3iryNCFWcbGBrQE8Z27ZuiLSTsLuQhU0NFcdm6hmm18ZFm7lJq9zKS3W9dZUthGp39ASpjmSdi4acC30MQDQIWopJ5n2kZBW_CLGuw7W6aHy3_wgUsuDWBYu_AUuLMC-0jF9TO6jz_VRxlRVvaF5Xv13cGlHrMyCO6KuPTTl_pnBh_vx4APYDGZNcZCav0oadN3ZUKE5keNdE9WM"/>
+<div class="absolute inset-0 bg-gradient-to-t from-deep-plum/90 via-deep-plum/20 to-transparent"></div>
+<div class="absolute bottom-0 left-0 p-10 text-white">
+<span class="font-label-md text-label-md uppercase tracking-widest text-soft-gold mb-2 block">Personalized Transformation</span>
+<h3 class="font-headline-md text-headline-md mb-4">1:1 Coaching Sessions</h3>
+<p class="font-body-md text-body-md max-w-md opacity-90 mb-6">A deep-dive into your personal growth journey, tailored to your specific life challenges and spiritual goals.</p>
+<a class="inline-flex items-center gap-2 font-label-lg text-label-lg group-hover:text-soft-gold transition-colors" href="#">
+                            Discover More <span class="material-symbols-outlined">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- Mann Shuddhi -->
+<div class="md:col-span-4 bg-warm-beige p-10 rounded-xl shadow-lg border border-outline-variant/30 flex flex-col justify-between hover:border-terracotta/40 transition-colors">
+<div>
+<span class="material-symbols-outlined text-4xl text-terracotta mb-6">waves</span>
+<h3 class="font-headline-md text-headline-md text-deep-plum mb-4">Mann Shuddhi</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6">Specialized sessions focused on the purification of thought and emotional release for mental clarity.</p>
+</div>
+<button class="text-terracotta font-label-lg text-label-lg text-left hover:underline">Learn the technique →</button>
+</div>
+<!-- Guided Meditation -->
+<div class="md:col-span-4 bg-white/40 backdrop-blur-md p-10 rounded-xl shadow-lg border border-outline-variant/20 flex flex-col justify-between group hover:bg-white/60 transition-all">
+<div>
+<div class="w-12 h-12 bg-terracotta rounded-full flex items-center justify-center text-white mb-6">
+<span class="material-symbols-outlined">self_improvement</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-deep-plum mb-4">Guided Meditation</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6">Live collective stillness, designed to ground your energy and expand your consciousness from home.</p>
+</div>
+<a class="font-label-lg text-label-lg text-terracotta" href="#">Book Seat →</a>
+</div>
+<!-- Tarot & Spiritual Guidance -->
+<div class="md:col-span-8 group relative overflow-hidden rounded-xl h-[450px] shadow-lg transition-transform hover:-translate-y-2">
+<img class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="Close-up of elegant tarot cards laid out on a silk cloth, surrounded by rose quartz crystals and a flickering candle in a golden holder. The aesthetic is luxurious and spiritual, using soft-focus and warm golden hour lighting. The color palette emphasizes soft gold, terracotta, and deep plum accents. The mood is mystical and serene." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA5bgRPGd34qAyyqte5Z2Z4BuutJJnx5G4mDU40k3RcOEh2fAgSSTx-dAY3UO6NKbDQAoACtmeJRChH6aOuyE5CKgDnEUcbtRdJv0skhi6bAeaAh9yWFyh6DhzzAZ4PsTZyRrs1Ofjbp--uKxmuyijEkyrajQJmGPGwpD782ZItEtDXTTTMzOSP_xmBFddxzcfb0X_UA9acLdiBmViXv6WFTMRhU3F5wF_d91oVPdUJAbzFhNN8TtT73BRssMcjrzqGV6nH3yEAI8o"/>
+<div class="absolute inset-0 bg-gradient-to-t from-deep-plum/90 via-deep-plum/10 to-transparent"></div>
+<div class="absolute bottom-0 left-0 p-10 text-white">
+<span class="font-label-md text-label-md uppercase tracking-widest text-soft-gold mb-2 block">Insight &amp; Intuition</span>
+<h3 class="font-headline-md text-headline-md mb-4">Tarot &amp; Spiritual Guidance</h3>
+<p class="font-body-md text-body-md max-w-md opacity-90 mb-6">Connect with your higher self through symbolic wisdom and intuitive alignment sessions.</p>
+<a class="inline-flex items-center gap-2 font-label-lg text-label-lg group-hover:text-soft-gold transition-colors" href="#">
+                            Explore the Mystery <span class="material-symbols-outlined">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- Growth Circles -->
+<div class="md:col-span-12 bg-deep-plum p-12 rounded-xl shadow-2xl relative overflow-hidden">
+<div class="relative z-10 flex flex-col md:flex-row items-center justify-between gap-10">
+<div class="max-w-xl">
+<h3 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-soft-gold mb-6">Online Growth Circles</h3>
+<p class="font-body-lg text-body-lg text-ivory-base/80 mb-8">Join a global community of like-minded souls for curated weekly discussions, peer support, and collective evolution.</p>
+<button class="bg-soft-gold text-deep-plum px-8 py-3 rounded-full font-label-lg text-label-lg hover:bg-white transition-all">Join the Circle</button>
+</div>
+<div class="flex -space-x-4">
+<img alt="Member" class="w-16 h-16 rounded-full border-4 border-deep-plum object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB__6xz2chDKT41h45mKbJxWMnQGFzhHUIYwho2non2W7yfZpIbnHgADp1Q6_t8vnRqgFqkJLzj8OcMJuPSZeYcW46ft7T9_5_iqmQkCzAR3i7ZQ--b2zr91aDCvPjG1EVvY5Bu_BHPkV3BWeDxRdN0haTwD4NbEJDMhgKqFdaMq0vR4085ioM65ENNECh6r68g2qGir11lCR7KFVO4_pRpg-y7Ysl8TbAI8siqATVv-8XjG4pLPI6Ss6mgEvavBYzzg1JZyYhKDDo"/>
+<img alt="Member" class="w-16 h-16 rounded-full border-4 border-deep-plum object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD8cjDBxgZapPfvvi3YksLIudkvkkCZZ3XP47V-96PKBRTEo4Exr5lS_48ggduq4yXAhZrtgOLh-C50V36t1e0oQ2xfQNYx7Gfv4YORALtSDmk-fxwOBhFRSXzvP66a1v5Bj_0O-htb4zi82yjG4Uo3DyMc7OQWLlGrtL-jUYo3xCB9plBSOZ9BDAen3yQErwAt6-8pF6Mt5MlQigZs0TwhpgV9qmzP7mEUF9V6N-pmOjnS6oFziUjmkO9QMUCqlgBWsi3XCiFe7Cg"/>
+<img alt="Member" class="w-16 h-16 rounded-full border-4 border-deep-plum object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAJpxa-6xhJaKn_pBgiqOjExJvn3QWgaH-CmopvVZIDntHrzP_hJypiAHVdYCnn75QfZOkaYBNoRP9ARU8Qds4zldf2vE27oTEsYqjcMsJTSwHO9sWR45DJieMcLKSgnuS1Or2zWMy9EEa341eTiGxy5fm6wrgYjnPXoQJXd2Rt6bLYFZsUs7w1F5o772eqR3udKKgKsf3ePboYb-pwfMJHqO7v2Y4d39wVf8bCAT-9v_mWL69HfTktw_KXjrOU7gESMhv4joBXAYw"/>
+<img alt="Member" class="w-16 h-16 rounded-full border-4 border-deep-plum object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuArfnCWtDQGf40hzstpirN-WGhWh8sHFZnbVeScla36DY1ZcgSGtgan2RRq7Qs77I5bVwM6ZgzrfPgJsVtakwoFcZ16cEbHv3TiTxZgIyppRfRU3rkJhIYUwDGtBzYnHSv6jNfSKtVCjbti3FpKcR2Nigp-kaJ5_9VCwMIVMrMCsmhaRbz6-ImQ9X5jTybhVXJWyecTxtNVNK4do6s3jMT7UCaxulHsqNFse2-xZU60FM_dLAYivKVAAApl6rSuTgmEAJifcRnpuyw"/>
+<div class="w-16 h-16 rounded-full border-4 border-deep-plum bg-terracotta flex items-center justify-center text-white font-label-lg">+200</div>
+</div>
+</div>
+<!-- Decorative Element -->
+<div class="absolute top-0 right-0 -translate-y-1/2 translate-x-1/2 w-96 h-96 bg-terracotta/10 rounded-full blur-3xl"></div>
+</div>
+</div>
+</section>
+<!-- Booking CTA Section -->
+<section class="py-section-gap-lg bg-surface-container">
+<div class="container mx-auto px-margin-mobile md:px-margin-desktop">
+<div class="glass-card p-12 md:p-20 rounded-[40px] text-center border border-white/50 shadow-2xl">
+<h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-deep-plum mb-8">Ready to Start Your Virtual Journey?</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto mb-12">
+                        Whether you seek clarity, peace, or radical growth, there is a space held just for you. Book your first session and step into the light.
+                    </p>
+<div class="flex flex-col sm:flex-row justify-center gap-6">
+<button class="bg-terracotta text-white px-12 py-5 rounded-full font-label-lg text-label-lg hover:shadow-xl hover:-translate-y-1 transition-all active:scale-95">
+                            Book an Online Session
+                        </button>
+<button class="bg-transparent border-2 border-soft-gold text-terracotta px-12 py-5 rounded-full font-label-lg text-label-lg hover:bg-soft-gold hover:text-white transition-all">
+                            View Pricing Plans
+                        </button>
+</div>
+<p class="mt-10 font-label-md text-label-md text-on-surface-variant/60 italic">Free 15-minute discovery calls available for first-time seekers.</p>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full pt-section-gap-md pb-8 bg-surface-container-high dark:bg-deep-plum border-t border-outline-variant/30 dark:border-outline/20">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop grid grid-cols-1 md:grid-cols-4 gap-gutter">
+<div class="col-span-1 md:col-span-1">
+<a class="font-headline-md text-headline-md text-primary dark:text-primary-fixed block mb-6" href="#">Veechi Shahi</a>
+<p class="font-body-md text-body-md text-on-surface-variant dark:text-surface-variant mb-6">Guiding global souls toward internal mastery and spiritual refinement.</p>
+</div>
+<div>
+<h4 class="font-label-lg text-label-lg text-terracotta dark:text-soft-gold mb-6 uppercase tracking-widest">Connect</h4>
+<ul class="space-y-4">
+<li><a class="font-body-md text-body-md text-on-surface-variant dark:text-surface-variant hover:text-soft-gold transition-colors duration-300 block" href="#">Instagram</a></li>
+<li><a class="font-body-md text-body-md text-on-surface-variant dark:text-surface-variant hover:text-soft-gold transition-colors duration-300 block" href="#">Facebook</a></li>
+<li><a class="font-body-md text-body-md text-on-surface-variant dark:text-surface-variant hover:text-soft-gold transition-colors duration-300 block" href="#">LinkedIn</a></li>
+<li><a class="font-body-md text-body-md text-on-surface-variant dark:text-surface-variant hover:text-soft-gold transition-colors duration-300 block" href="#">YouTube</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-label-lg text-label-lg text-terracotta dark:text-soft-gold mb-6 uppercase tracking-widest">Sanctuary</h4>
+<ul class="space-y-4">
+<li><a class="font-body-md text-body-md text-on-surface-variant dark:text-surface-variant hover:text-soft-gold transition-colors duration-300 block" href="#">Online Sessions</a></li>
+<li><a class="font-body-md text-body-md text-on-surface-variant dark:text-surface-variant hover:text-soft-gold transition-colors duration-300 block" href="#">Retreats</a></li>
+<li><a class="font-body-md text-body-md text-on-surface-variant dark:text-surface-variant hover:text-soft-gold transition-colors duration-300 block" href="#">The Journal</a></li>
+<li><a class="font-body-md text-body-md text-on-surface-variant dark:text-surface-variant hover:text-soft-gold transition-colors duration-300 block" href="#">Corporate</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-label-lg text-label-lg text-terracotta dark:text-soft-gold mb-6 uppercase tracking-widest">Newsletter</h4>
+<p class="font-body-md text-body-md text-on-surface-variant dark:text-surface-variant mb-6">Receive soul-nourishing insights weekly.</p>
+<form class="flex flex-col gap-2">
+<input class="bg-warm-beige/50 border-none rounded-full px-6 py-3 focus:ring-1 focus:ring-soft-gold text-body-md font-body-md" placeholder="Email Address" type="email"/>
+<button class="bg-terracotta text-white rounded-full py-3 hover:bg-primary transition-all font-label-lg text-label-lg">Subscribe</button>
+</form>
+</div>
+</div>
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop mt-20 pt-8 border-t border-outline-variant/10 flex flex-col md:flex-row justify-between items-center gap-6">
+<span class="font-body-md text-body-md text-on-surface-variant/60">© 2024 Veechi Shahi. All rights reserved.</span>
+<div class="flex gap-8">
+<a class="font-label-md text-label-md text-on-surface-variant/60 hover:text-terracotta" href="#">Privacy Policy</a>
+<a class="font-label-md text-label-md text-on-surface-variant/60 hover:text-terracotta" href="#">Terms</a>
+</div>
+</div>
+</footer>
+<script>
+        const menuToggle = document.getElementById('menu-toggle');
+        const closeDrawer = document.getElementById('close-drawer');
+        const drawer = document.getElementById('drawer');
+        const overlay = document.getElementById('drawer-overlay');
+
+        function toggleMenu() {
+            drawer.classList.toggle('translate-x-[-100%]');
+            overlay.classList.toggle('hidden');
+            setTimeout(() => overlay.classList.toggle('opacity-0'), 10);
+        }
+
+        menuToggle.addEventListener('click', toggleMenu);
+        closeDrawer.addEventListener('click', toggleMenu);
+        overlay.addEventListener('click', toggleMenu);
+
+        // Smooth scroll reveal observer
+        const observerOptions = {
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('fade-in');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('section > div').forEach(div => {
+            observer.observe(div);
+        });
+    </script>
+</body></html>
