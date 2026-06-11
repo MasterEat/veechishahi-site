@@ -3,9 +3,9 @@
 <html class="scroll-smooth" lang="en"><head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>About Veechi Shahi | Life &amp; Wellness Coach</title>
+<title>Veechi Shahi | Life &amp; Wellness Coach</title>
 <link rel="icon" type="image/png" href="assets/logo.png"/>
-<meta content="Discover the journey of Veechi Shahi, a wellness coach with over 25 years of experience in meditation, executive coaching, and holistic transformation." name="description"/>
+<meta content="Life and wellness coaching, retreats, online sessions and conscious corporate programs by Veechi Shahi." name="description"/>
 <!-- Tailwind CSS -->
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
 <!-- Google Fonts -->
@@ -130,55 +130,55 @@
 </head>
 <body class="bg-background text-on-background atmospheric-gradient antialiased overflow-x-hidden">
 <!-- TopAppBar -->
-<header class="fixed top-0 w-full z-50 backdrop-blur-xl bg-ivory-base/80 shadow-sm">
+<header class="fixed top-0 w-full z-50 backdrop-blur-xl bg-ivory-base/80 dark:bg-deep-plum/80 shadow-sm">
 <nav class="flex justify-between items-center px-margin-mobile md:px-margin-desktop h-20 w-full mx-auto max-w-container-max">
 <div class="flex items-center gap-4">
-<span class="material-symbols-outlined text-terracotta cursor-pointer md:hidden" id="menu-toggle">menu</span>
-
+<button class="md:hidden text-terracotta p-2 focus:outline-none" id="menu-toggle" aria-label="Open navigation menu" aria-controls="drawer" aria-expanded="false">
+<span class="material-symbols-outlined">menu</span>
+</button>
+<a class="flex items-center gap-3 font-headline-md text-headline-md text-primary tracking-tight" href="index.html">
+<img alt="Veechi Shahi logo" class="h-9 w-auto object-contain" height="36" width="37" src="assets/logo.png"/>Veechi Shahi
+</a>
 </div>
 <div class="hidden md:flex items-center gap-8">
-<a class="text-on-surface-variant font-label-lg text-label-lg hover:text-terracotta transition-colors duration-300" href="index.html">Meet Veechi</a>
-<a class="text-terracotta font-semibold border-b-2 border-soft-gold font-label-lg text-label-lg" href="index.html">Sanctuary of Self</a>
-<a class="text-on-surface-variant font-label-lg text-label-lg hover:text-terracotta transition-colors duration-300" href="retreats.html">Retreats</a>
-<a class="text-on-surface-variant font-label-lg text-label-lg hover:text-terracotta transition-colors duration-300" href="corporate.html">Corporate</a>
+<a data-nav="meet" class="text-terracotta font-semibold border-b-2 border-soft-gold font-label-lg text-label-lg" href="index.html">Meet Veechi</a>
+<a data-nav="sanctuary" class="text-on-surface-variant font-label-lg text-label-lg hover:text-terracotta transition-colors duration-300" href="index.html#sanctuary">Sanctuary of Self</a>
+<a data-nav="retreats" class="text-on-surface-variant font-label-lg text-label-lg hover:text-terracotta transition-colors duration-300" href="retreats.html">Retreats</a>
+<a data-nav="sessions" class="text-on-surface-variant font-label-lg text-label-lg hover:text-terracotta transition-colors duration-300" href="sessions.html">Online Sessions</a>
+<a data-nav="corporate" class="text-on-surface-variant font-label-lg text-label-lg hover:text-terracotta transition-colors duration-300" href="corporate.html">Corporate</a>
+<a data-nav="contact" class="text-on-surface-variant font-label-lg text-label-lg hover:text-terracotta transition-colors duration-300" href="contact.html">Contact</a>
 </div>
-<a class="bg-terracotta text-white px-6 py-2.5 rounded-full font-label-lg text-label-lg hover:opacity-90 active:scale-95 transition-all" href="#booking">Book Session</a>
+<a class="bg-terracotta text-white px-6 py-2.5 rounded-full font-label-lg text-label-lg hover:bg-primary transition-all active:scale-95" href="contact.html#booking">Book Session</a>
 </nav>
 </header>
 <!-- Navigation Drawer (Mobile) -->
-<div class="fixed inset-y-0 left-0 z-[60] flex flex-col w-80 bg-ivory-base shadow-xl transform -translate-x-full transition-transform duration-300 ease-in-out md:hidden" id="drawer">
-<div class="p-8 border-b border-outline-variant/30 flex justify-between items-center">
-<span class="flex items-center gap-3 font-headline-md text-headline-md text-primary"><img alt="" class="h-9 w-auto" height="36" width="37" src="assets/logo.png"/>Veechi Shahi</span>
-<span class="material-symbols-outlined cursor-pointer" id="close-drawer">close</span>
+<div class="fixed inset-y-0 left-0 z-[60] flex flex-col h-full w-80 bg-ivory-base dark:bg-deep-plum shadow-xl transform -translate-x-full transition-transform duration-300 ease-in-out" id="drawer" aria-hidden="true">
+<div class="p-6 flex justify-between items-center border-b border-outline-variant/30">
+<a class="flex items-center gap-3 font-headline-md text-headline-md text-primary" href="index.html"><img alt="Veechi Shahi logo" class="h-9 w-auto object-contain" height="36" width="37" src="assets/logo.png"/>Veechi Shahi</a>
+<button class="text-on-surface-variant" id="close-drawer" aria-label="Close navigation menu"><span class="material-symbols-outlined">close</span></button>
 </div>
-<div class="flex-1 py-4">
-<a class="flex items-center gap-4 text-on-surface-variant mx-4 my-1 px-6 py-3 hover:bg-warm-beige rounded-full transition-colors" href="index.html">
-<span class="material-symbols-outlined">self_improvement</span>
-<span class="font-label-lg text-label-lg">Meet Veechi</span>
+<nav class="flex flex-col py-4">
+<a data-nav="meet" class="flex items-center gap-4 bg-secondary-container text-on-secondary-container rounded-full mx-4 my-1 px-6 py-3 font-label-lg text-label-lg" href="index.html">
+<span class="material-symbols-outlined">self_improvement</span> Meet Veechi
 </a>
-<a class="flex items-center gap-4 bg-secondary-container text-on-secondary-container rounded-full mx-4 my-1 px-6 py-3" href="index.html">
-<span class="material-symbols-outlined">spa</span>
-<span class="font-label-lg text-label-lg">Sanctuary of Self</span>
+<a data-nav="sanctuary" class="flex items-center gap-4 text-on-surface-variant mx-4 my-1 px-6 py-3 hover:bg-warm-beige rounded-full transition-colors font-label-lg text-label-lg" href="index.html#sanctuary">
+<span class="material-symbols-outlined">spa</span> Sanctuary of Self
 </a>
-<a class="flex items-center gap-4 text-on-surface-variant mx-4 my-1 px-6 py-3 hover:bg-warm-beige rounded-full transition-colors" href="retreats.html">
-<span class="material-symbols-outlined">travel_explore</span>
-<span class="font-label-lg text-label-lg">Retreats</span>
+<a data-nav="retreats" class="flex items-center gap-4 text-on-surface-variant mx-4 my-1 px-6 py-3 hover:bg-warm-beige rounded-full transition-colors font-label-lg text-label-lg" href="retreats.html">
+<span class="material-symbols-outlined">travel_explore</span> Retreats
 </a>
-<a class="flex items-center gap-4 text-on-surface-variant mx-4 my-1 px-6 py-3 hover:bg-warm-beige rounded-full transition-colors" href="sessions.html">
-<span class="material-symbols-outlined">video_call</span>
-<span class="font-label-lg text-label-lg">Online Sessions</span>
+<a data-nav="sessions" class="flex items-center gap-4 text-on-surface-variant mx-4 my-1 px-6 py-3 hover:bg-warm-beige rounded-full transition-colors font-label-lg text-label-lg" href="sessions.html">
+<span class="material-symbols-outlined">video_call</span> Online Sessions
 </a>
-<a class="flex items-center gap-4 text-on-surface-variant mx-4 my-1 px-6 py-3 hover:bg-warm-beige rounded-full transition-colors" href="corporate.html">
-<span class="material-symbols-outlined">business_center</span>
-<span class="font-label-lg text-label-lg">Corporate</span>
+<a data-nav="corporate" class="flex items-center gap-4 text-on-surface-variant mx-4 my-1 px-6 py-3 hover:bg-warm-beige rounded-full transition-colors font-label-lg text-label-lg" href="corporate.html">
+<span class="material-symbols-outlined">business_center</span> Corporate
 </a>
-<a class="flex items-center gap-4 text-on-surface-variant mx-4 my-1 px-6 py-3 hover:bg-warm-beige rounded-full transition-colors" href="contact.html">
-<span class="material-symbols-outlined">mail</span>
-<span class="font-label-lg text-label-lg">Contact</span>
+<a data-nav="contact" class="flex items-center gap-4 text-on-surface-variant mx-4 my-1 px-6 py-3 hover:bg-warm-beige rounded-full transition-colors font-label-lg text-label-lg" href="contact.html">
+<span class="material-symbols-outlined">mail</span> Contact
 </a>
+</nav>
 </div>
-</div>
-<div class="fixed inset-0 bg-black/20 z-50 hidden backdrop-blur-sm" id="overlay"></div>
+<div class="fixed inset-0 bg-black/20 z-[55] hidden backdrop-blur-sm" id="drawer-overlay"></div>
 <main class="pt-20">
 <!-- Hero Section -->
 <section class="relative min-h-[80vh] flex items-center overflow-hidden">
@@ -193,7 +193,7 @@
 <p class="font-body-lg text-body-lg text-on-surface-variant mb-10 max-w-lg">Veechi Shahi is a global life and wellness coach dedicated to guiding individuals through profound personal and professional transformations.</p>
 <div class="flex flex-col sm:flex-row gap-4">
 <a class="bg-terracotta text-white px-10 py-4 rounded-full font-label-lg text-label-lg text-center hover:shadow-lg transition-all hover:translate-y-[-2px]" href="#about">Discover Her Journey</a>
-<a class="border-2 border-deep-plum text-deep-plum px-10 py-4 rounded-full font-label-lg text-label-lg text-center hover:bg-deep-plum hover:text-white transition-all" href="#booking">Start Your Path</a>
+<a class="border-2 border-deep-plum text-deep-plum px-10 py-4 rounded-full font-label-lg text-label-lg text-center hover:bg-deep-plum hover:text-white transition-all" href="contact.html#booking">Start Your Path</a>
 </div>
 </div>
 </div>
@@ -204,7 +204,7 @@
 <div class="grid grid-cols-1 lg:grid-cols-2 gap-24 items-center">
 <div class="relative">
 <div class="aspect-[4/5] rounded-xl overflow-hidden shadow-2xl relative z-10">
-<img class="w-full h-full object-cover" data-alt="A serene portrait of Veechi Shahi in a soft-lit indoor garden setting, wearing elegant linen clothing. The lighting is golden hour warm, creating a peaceful and professional atmosphere. The color palette features ivory, terracotta, and soft greens, perfectly aligned with a soulful premium wellness aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA3wE_SwgFPtLWYb4qjaaUcRV2Pm0oe00VmJRMVwqxbtzglAWkC_n29K32iPmKhtsoYcqSuOEfQWtdRuuMxghV19DeUiJVcRoiLiB0cfHglIyp3B61EFyiBJJ-UITdSd9gSISqxXffC2R8cSyZsqHRea7Rm6FMpEXy6RyfRaUHjynRykw5-_YQEsswTONn9zDIS_RmkW97sUvywVt0kORwRiYeTMOJlf3K6LIJ6cZz4T-b-6FmP4vG_ujdO26CB6NWG9ZV4AbFdiI0"/>
+<img alt="Veechi Shahi, life and wellness coach" class="w-full h-full object-cover" loading="lazy" src="assets/veechishahi.png"/>
 </div>
 <div class="absolute -bottom-10 -right-10 w-64 h-64 bg-warm-beige rounded-full -z-0 opacity-50 blur-3xl"></div>
 <div class="absolute -top-10 -left-10 w-48 h-48 bg-soft-gold rounded-full -z-0 opacity-20 blur-2xl"></div>
@@ -232,7 +232,7 @@
 </div>
 </section>
 <!-- The Approach Section -->
-<section class="py-section-gap-md md:py-section-gap-lg bg-surface-container-high/30 relative">
+<section class="py-section-gap-md md:py-section-gap-lg bg-surface-container-high/30 relative" id="sanctuary">
 <div class="container mx-auto px-margin-mobile md:px-margin-desktop max-w-container-max">
 <div class="text-center max-w-3xl mx-auto mb-20">
 <h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-deep-plum mb-6">The Holistic Synergy</h2>
@@ -377,7 +377,7 @@
 <div class="relative z-10">
 <h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-deep-plum mb-6">Begin Your Transformation</h2>
 <p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto mb-10">Schedule a discovery call to explore how Veechi can help you align your mind, body, and heart with your highest potential.</p>
-<button class="bg-terracotta text-white px-12 py-5 rounded-full font-label-lg text-lg hover:shadow-2xl transition-all hover:scale-105 active:scale-95">Book a Session</button>
+<a class="inline-block bg-terracotta text-white px-12 py-5 rounded-full font-label-lg text-lg hover:shadow-2xl transition-all hover:scale-105 active:scale-95" href="contact.html#booking">Book a Session</a>
 </div>
 <!-- Decorative background elements -->
 <div class="absolute top-0 right-0 w-64 h-64 bg-terracotta/10 rounded-full translate-x-1/2 -translate-y-1/2 blur-3xl"></div>
@@ -396,22 +396,22 @@
 <div>
 <h6 class="font-label-lg text-deep-plum mb-6">Navigation</h6>
 <ul class="space-y-4">
-<li><a class="text-on-surface-variant hover:text-soft-gold transition-colors" href="#">Instagram</a></li>
-<li><a class="text-on-surface-variant hover:text-soft-gold transition-colors" href="#">Facebook</a></li>
-<li><a class="text-on-surface-variant hover:text-soft-gold transition-colors" href="#">LinkedIn</a></li>
-<li><a class="text-on-surface-variant hover:text-soft-gold transition-colors" href="#">YouTube</a></li>
+<li><a class="text-on-surface-variant hover:text-soft-gold transition-colors" href="index.html">Meet Veechi</a></li>
+<li><a class="text-on-surface-variant hover:text-soft-gold transition-colors" href="index.html#sanctuary">Sanctuary of Self</a></li>
+<li><a class="text-on-surface-variant hover:text-soft-gold transition-colors" href="retreats.html">Retreats</a></li>
+<li><a class="text-on-surface-variant hover:text-soft-gold transition-colors" href="sessions.html">Online Sessions</a></li>
 </ul>
 </div>
 <div>
-<h6 class="font-label-lg text-deep-plum mb-6">Legal</h6>
+<h6 class="font-label-lg text-deep-plum mb-6">Connect</h6>
 <ul class="space-y-4">
-<li><a class="text-on-surface-variant hover:text-soft-gold transition-colors" href="#">Privacy Policy</a></li>
-<li><a class="text-on-surface-variant hover:text-soft-gold transition-colors" href="#">Terms</a></li>
+<li><a class="text-on-surface-variant hover:text-soft-gold transition-colors" href="corporate.html">Corporate</a></li>
+<li><a class="text-on-surface-variant hover:text-soft-gold transition-colors" href="contact.html">Contact</a></li>
 </ul>
 </div>
 </div>
 <div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop mt-20 pt-8 border-t border-outline-variant/20 flex flex-col md:flex-row justify-between items-center gap-4">
-<p class="font-body-md text-on-surface-variant/70 text-sm">© 2024 Veechi Shahi. All rights reserved.</p>
+<p class="font-body-md text-on-surface-variant/70 text-sm">© 2026 Veechi Shahi. All rights reserved.</p>
 <div class="flex gap-6">
 <span class="material-symbols-outlined text-on-surface-variant/50 hover:text-terracotta cursor-pointer transition-colors">public</span>
 <span class="material-symbols-outlined text-on-surface-variant/50 hover:text-terracotta cursor-pointer transition-colors">lock</span>
@@ -420,35 +420,55 @@
 </div>
 </footer>
 <script>
-        // Menu Toggle Logic
+        // Shared drawer logic and homepage Sanctuary hash active state.
         const menuToggle = document.getElementById('menu-toggle');
         const closeDrawer = document.getElementById('close-drawer');
         const drawer = document.getElementById('drawer');
-        const overlay = document.getElementById('overlay');
+        const overlay = document.getElementById('drawer-overlay');
 
-        function toggleMenu() {
-            drawer.classList.toggle('-translate-x-full');
-            overlay.classList.toggle('hidden');
-            document.body.classList.toggle('overflow-hidden');
+        function setDrawer(open) {
+            if (!drawer || !overlay) return;
+            drawer.classList.toggle('-translate-x-full', !open);
+            drawer.classList.toggle('translate-x-0', open);
+            drawer.setAttribute('aria-hidden', String(!open));
+            overlay.classList.toggle('hidden', !open);
+            document.body.classList.toggle('overflow-hidden', open);
+            if (menuToggle) menuToggle.setAttribute('aria-expanded', String(open));
         }
 
-        menuToggle.addEventListener('click', toggleMenu);
-        closeDrawer.addEventListener('click', toggleMenu);
-        overlay.addEventListener('click', toggleMenu);
+        menuToggle?.addEventListener('click', () => setDrawer(true));
+        closeDrawer?.addEventListener('click', () => setDrawer(false));
+        overlay?.addEventListener('click', () => setDrawer(false));
 
-        // Subtle Header Scroll Effect
-        window.addEventListener('scroll', () => {
-            const header = document.querySelector('header');
-            if (window.scrollY > 50) {
-                header.classList.add('py-2');
-                header.classList.remove('py-4');
-                header.classList.add('shadow-md');
-            } else {
-                header.classList.remove('py-2');
-                header.classList.add('py-4');
-                header.classList.remove('shadow-md');
-            }
-        });
+        function updateHomeHashActiveState() {
+            const page = window.location.pathname.split('/').pop() || 'index.html';
+            if (page !== 'index.html') return;
+            const isSanctuary = window.location.hash === '#sanctuary';
+            const activeDesktop = 'text-terracotta font-semibold border-b-2 border-soft-gold font-label-lg text-label-lg';
+            const inactiveDesktop = 'text-on-surface-variant font-label-lg text-label-lg hover:text-terracotta transition-colors duration-300';
+            const activeMobile = 'flex items-center gap-4 bg-secondary-container text-on-secondary-container rounded-full mx-4 my-1 px-6 py-3 font-label-lg text-label-lg';
+            const inactiveMobile = 'flex items-center gap-4 text-on-surface-variant mx-4 my-1 px-6 py-3 hover:bg-warm-beige rounded-full transition-colors font-label-lg text-label-lg';
+            document.querySelectorAll('[data-nav="meet"], [data-nav="sanctuary"]').forEach((link) => {
+                const shouldBeActive = link.dataset.nav === (isSanctuary ? 'sanctuary' : 'meet');
+                link.className = (link.closest('#drawer') ? (shouldBeActive ? activeMobile : inactiveMobile) : (shouldBeActive ? activeDesktop : inactiveDesktop));
+            });
+        }
+        window.addEventListener('hashchange', updateHomeHashActiveState);
+        updateHomeHashActiveState();
+
+        // Preserve existing gentle reveal effects where present.
+        const observerOptions = { threshold: 0.1 };
+        const observer = 'IntersectionObserver' in window ? new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animate-in');
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions) : null;
+        if (observer) {
+            document.querySelectorAll('.animate-fade-in-up, section > div').forEach(el => observer.observe(el));
+        }
     </script>
 <style>
         @keyframes subtle-zoom {
