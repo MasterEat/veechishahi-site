@@ -136,56 +136,54 @@
 <body class="bg-background text-on-surface selection:bg-terracotta/20 selection:text-terracotta">
 <!-- TopAppBar -->
 <header class="fixed top-0 w-full z-50 backdrop-blur-xl bg-ivory-base/80 dark:bg-deep-plum/80 shadow-sm">
-<div class="flex justify-between items-center px-margin-mobile md:px-margin-desktop h-20 w-full mx-auto">
+<nav class="flex justify-between items-center px-margin-mobile md:px-margin-desktop h-20 w-full mx-auto max-w-container-max">
 <div class="flex items-center gap-4">
-<button class="md:hidden text-terracotta dark:text-primary-fixed-dim" id="menu-toggle">
+<button class="md:hidden text-terracotta p-2 focus:outline-none" id="menu-toggle" aria-label="Open navigation menu" aria-controls="drawer" aria-expanded="false">
 <span class="material-symbols-outlined">menu</span>
 </button>
-
+<a class="flex items-center gap-3 font-headline-md text-headline-md text-primary tracking-tight" href="index.html">
+<img alt="Veechi Shahi logo" class="h-9 w-auto object-contain" height="36" width="37" src="assets/logo.png"/>Veechi Shahi
+</a>
 </div>
-<nav class="hidden md:flex gap-gutter items-center">
-<a class="font-label-lg text-label-lg text-on-surface-variant dark:text-surface-variant hover:text-terracotta dark:hover:text-soft-gold transition-colors duration-300" href="index.html">Meet Veechi</a>
-<a class="font-label-lg text-label-lg text-on-surface-variant dark:text-surface-variant hover:text-terracotta dark:hover:text-soft-gold transition-colors duration-300" href="index.html">Sanctuary</a>
-<a class="font-label-lg text-label-lg text-terracotta dark:text-soft-gold font-semibold border-b-2 border-soft-gold transition-colors duration-300" href="sessions.html">Online Sessions</a>
-<a class="font-label-lg text-label-lg text-on-surface-variant dark:text-surface-variant hover:text-terracotta dark:hover:text-soft-gold transition-colors duration-300" href="retreats.html">Retreats</a>
+<div class="hidden md:flex items-center gap-8">
+<a data-nav="meet" class="text-on-surface-variant font-label-lg text-label-lg hover:text-terracotta transition-colors duration-300" href="index.html">Meet Veechi</a>
+<a data-nav="sanctuary" class="text-on-surface-variant font-label-lg text-label-lg hover:text-terracotta transition-colors duration-300" href="index.html#sanctuary">Sanctuary of Self</a>
+<a data-nav="retreats" class="text-on-surface-variant font-label-lg text-label-lg hover:text-terracotta transition-colors duration-300" href="retreats.html">Retreats</a>
+<a data-nav="sessions" class="text-terracotta font-semibold border-b-2 border-soft-gold font-label-lg text-label-lg" href="sessions.html">Online Sessions</a>
+<a data-nav="corporate" class="text-on-surface-variant font-label-lg text-label-lg hover:text-terracotta transition-colors duration-300" href="corporate.html">Corporate</a>
+<a data-nav="contact" class="text-on-surface-variant font-label-lg text-label-lg hover:text-terracotta transition-colors duration-300" href="contact.html">Contact</a>
+</div>
+<a class="bg-terracotta text-white px-6 py-2.5 rounded-full font-label-lg text-label-lg hover:bg-primary transition-all active:scale-95" href="contact.html#booking">Book Session</a>
 </nav>
-<button class="bg-terracotta text-white px-6 py-2.5 rounded-full font-label-lg text-label-lg hover:bg-primary transition-all active:scale-95 shadow-md">
-                Book Session
-            </button>
-</div>
 </header>
-<!-- Mobile Navigation Drawer -->
-<div class="fixed inset-y-0 left-0 z-[60] flex flex-col h-full w-80 rounded-r-xl bg-ivory-base dark:bg-deep-plum shadow-xl translate-x-[-100%] transition-transform duration-300" id="drawer">
-<div class="p-8 border-b border-outline-variant/20">
-<div class="flex justify-between items-center">
-<span class="flex items-center gap-3 font-headline-md text-headline-md text-primary"><img alt="" class="h-9 w-auto" height="36" width="37" src="assets/logo.png"/>Veechi Shahi</span>
-<button class="text-on-surface-variant" id="close-drawer">
-<span class="material-symbols-outlined">close</span>
-</button>
+<!-- Navigation Drawer (Mobile) -->
+<div class="fixed inset-y-0 left-0 z-[60] flex flex-col h-full w-80 bg-ivory-base dark:bg-deep-plum shadow-xl transform -translate-x-full transition-transform duration-300 ease-in-out" id="drawer" aria-hidden="true">
+<div class="p-6 flex justify-between items-center border-b border-outline-variant/30">
+<a class="flex items-center gap-3 font-headline-md text-headline-md text-primary" href="index.html"><img alt="Veechi Shahi logo" class="h-9 w-auto object-contain" height="36" width="37" src="assets/logo.png"/>Veechi Shahi</a>
+<button class="text-on-surface-variant" id="close-drawer" aria-label="Close navigation menu"><span class="material-symbols-outlined">close</span></button>
 </div>
-</div>
-<nav class="flex flex-col py-6">
-<a class="flex items-center gap-4 text-on-surface-variant dark:text-surface-variant mx-4 my-1 px-6 py-3 hover:bg-warm-beige dark:hover:bg-surface-variant rounded-full font-label-lg text-label-lg transition-all" href="index.html">
+<nav class="flex flex-col py-4">
+<a data-nav="meet" class="flex items-center gap-4 text-on-surface-variant mx-4 my-1 px-6 py-3 hover:bg-warm-beige rounded-full transition-colors font-label-lg text-label-lg" href="index.html">
 <span class="material-symbols-outlined">self_improvement</span> Meet Veechi
-            </a>
-<a class="flex items-center gap-4 text-on-surface-variant dark:text-surface-variant mx-4 my-1 px-6 py-3 hover:bg-warm-beige dark:hover:bg-surface-variant rounded-full font-label-lg text-label-lg transition-all" href="index.html">
+</a>
+<a data-nav="sanctuary" class="flex items-center gap-4 text-on-surface-variant mx-4 my-1 px-6 py-3 hover:bg-warm-beige rounded-full transition-colors font-label-lg text-label-lg" href="index.html#sanctuary">
 <span class="material-symbols-outlined">spa</span> Sanctuary of Self
-            </a>
-<a class="flex items-center gap-4 bg-secondary-container dark:bg-secondary text-on-secondary-container dark:text-on-secondary rounded-full mx-4 my-1 px-6 py-3 font-label-lg text-label-lg" href="sessions.html">
-<span class="material-symbols-outlined">video_call</span> Online Sessions
-            </a>
-<a class="flex items-center gap-4 text-on-surface-variant dark:text-surface-variant mx-4 my-1 px-6 py-3 hover:bg-warm-beige dark:hover:bg-surface-variant rounded-full font-label-lg text-label-lg transition-all" href="retreats.html">
+</a>
+<a data-nav="retreats" class="flex items-center gap-4 text-on-surface-variant mx-4 my-1 px-6 py-3 hover:bg-warm-beige rounded-full transition-colors font-label-lg text-label-lg" href="retreats.html">
 <span class="material-symbols-outlined">travel_explore</span> Retreats
-            </a>
-<a class="flex items-center gap-4 text-on-surface-variant dark:text-surface-variant mx-4 my-1 px-6 py-3 hover:bg-warm-beige dark:hover:bg-surface-variant rounded-full font-label-lg text-label-lg transition-all" href="corporate.html">
+</a>
+<a data-nav="sessions" class="flex items-center gap-4 bg-secondary-container text-on-secondary-container rounded-full mx-4 my-1 px-6 py-3 font-label-lg text-label-lg" href="sessions.html">
+<span class="material-symbols-outlined">video_call</span> Online Sessions
+</a>
+<a data-nav="corporate" class="flex items-center gap-4 text-on-surface-variant mx-4 my-1 px-6 py-3 hover:bg-warm-beige rounded-full transition-colors font-label-lg text-label-lg" href="corporate.html">
 <span class="material-symbols-outlined">business_center</span> Corporate
-            </a>
-<a class="flex items-center gap-4 text-on-surface-variant dark:text-surface-variant mx-4 my-1 px-6 py-3 hover:bg-warm-beige dark:hover:bg-surface-variant rounded-full font-label-lg text-label-lg transition-all" href="contact.html">
+</a>
+<a data-nav="contact" class="flex items-center gap-4 text-on-surface-variant mx-4 my-1 px-6 py-3 hover:bg-warm-beige rounded-full transition-colors font-label-lg text-label-lg" href="contact.html">
 <span class="material-symbols-outlined">mail</span> Contact
-            </a>
+</a>
 </nav>
 </div>
-<div class="fixed inset-0 bg-black/20 backdrop-blur-sm z-50 hidden opacity-0 transition-opacity duration-300" id="drawer-overlay"></div>
+<div class="fixed inset-0 bg-black/20 z-[55] hidden backdrop-blur-sm" id="drawer-overlay"></div>
 <main class="bg-mesh">
 <!-- Hero Section -->
 <section class="relative min-h-[80vh] flex items-center pt-20">
@@ -201,12 +199,8 @@
                         Distance is but a thought. Experience transformative wellness through virtual portals designed to nourish your spirit, anywhere in the world.
                     </p>
 <div class="flex flex-col sm:flex-row gap-4">
-<button class="bg-terracotta text-white px-10 py-4 rounded-full font-label-lg text-label-lg hover:bg-primary transition-all shadow-xl hover:-translate-y-1">
-                            Book an Online Session
-                        </button>
-<button class="border-2 border-deep-plum text-deep-plum px-10 py-4 rounded-full font-label-lg text-label-lg hover:bg-deep-plum hover:text-white transition-all">
-                            View Offerings
-                        </button>
+<a class="inline-block bg-terracotta text-white px-10 py-4 rounded-full font-label-lg text-label-lg hover:bg-primary transition-all shadow-xl hover:-translate-y-1" href="contact.html#booking">Book an Online Session</a>
+<a class="inline-block border-2 border-deep-plum text-deep-plum px-10 py-4 rounded-full font-label-lg text-label-lg hover:bg-deep-plum hover:text-white transition-all" href="sessions.html">View Offerings</a>
 </div>
 </div>
 </div>
@@ -227,7 +221,7 @@
 <span class="font-label-md text-label-md uppercase tracking-widest text-soft-gold mb-2 block">Personalized Transformation</span>
 <h3 class="font-headline-md text-headline-md mb-4">1:1 Coaching Sessions</h3>
 <p class="font-body-md text-body-md max-w-md opacity-90 mb-6">A deep-dive into your personal growth journey, tailored to your specific life challenges and spiritual goals.</p>
-<a class="inline-flex items-center gap-2 font-label-lg text-label-lg group-hover:text-soft-gold transition-colors" href="#">
+<a class="inline-flex items-center gap-2 font-label-lg text-label-lg group-hover:text-soft-gold transition-colors" href="contact.html#booking">
                             Discover More <span class="material-symbols-outlined">arrow_forward</span>
 </a>
 </div>
@@ -239,7 +233,7 @@
 <h3 class="font-headline-md text-headline-md text-deep-plum mb-4">Mann Shuddhi</h3>
 <p class="font-body-md text-body-md text-on-surface-variant mb-6">Specialized sessions focused on the purification of thought and emotional release for mental clarity.</p>
 </div>
-<button class="text-terracotta font-label-lg text-label-lg text-left hover:underline">Learn the technique →</button>
+<a class="text-terracotta font-label-lg text-label-lg text-left hover:underline" href="contact.html#booking">Learn the technique →</a>
 </div>
 <!-- Guided Meditation -->
 <div class="md:col-span-4 bg-white/40 backdrop-blur-md p-10 rounded-xl shadow-lg border border-outline-variant/20 flex flex-col justify-between group hover:bg-white/60 transition-all">
@@ -260,7 +254,7 @@
 <span class="font-label-md text-label-md uppercase tracking-widest text-soft-gold mb-2 block">Insight &amp; Intuition</span>
 <h3 class="font-headline-md text-headline-md mb-4">Tarot &amp; Spiritual Guidance</h3>
 <p class="font-body-md text-body-md max-w-md opacity-90 mb-6">Connect with your higher self through symbolic wisdom and intuitive alignment sessions.</p>
-<a class="inline-flex items-center gap-2 font-label-lg text-label-lg group-hover:text-soft-gold transition-colors" href="#">
+<a class="inline-flex items-center gap-2 font-label-lg text-label-lg group-hover:text-soft-gold transition-colors" href="contact.html#booking">
                             Explore the Mystery <span class="material-symbols-outlined">arrow_forward</span>
 </a>
 </div>
@@ -271,7 +265,7 @@
 <div class="max-w-xl">
 <h3 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-soft-gold mb-6">Online Growth Circles</h3>
 <p class="font-body-lg text-body-lg text-ivory-base/80 mb-8">Join a global community of like-minded souls for curated weekly discussions, peer support, and collective evolution.</p>
-<button class="bg-soft-gold text-deep-plum px-8 py-3 rounded-full font-label-lg text-label-lg hover:bg-white transition-all">Join the Circle</button>
+<a class="inline-block bg-soft-gold text-deep-plum px-8 py-3 rounded-full font-label-lg text-label-lg hover:bg-white transition-all" href="contact.html#booking">Join the Circle</a>
 </div>
 <div class="flex -space-x-4">
 <img alt="Member" class="w-16 h-16 rounded-full border-4 border-deep-plum object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB__6xz2chDKT41h45mKbJxWMnQGFzhHUIYwho2non2W7yfZpIbnHgADp1Q6_t8vnRqgFqkJLzj8OcMJuPSZeYcW46ft7T9_5_iqmQkCzAR3i7ZQ--b2zr91aDCvPjG1EVvY5Bu_BHPkV3BWeDxRdN0haTwD4NbEJDMhgKqFdaMq0vR4085ioM65ENNECh6r68g2qGir11lCR7KFVO4_pRpg-y7Ysl8TbAI8siqATVv-8XjG4pLPI6Ss6mgEvavBYzzg1JZyYhKDDo"/>
@@ -295,12 +289,8 @@
                         Whether you seek clarity, peace, or radical growth, there is a space held just for you. Book your first session and step into the light.
                     </p>
 <div class="flex flex-col sm:flex-row justify-center gap-6">
-<button class="bg-terracotta text-white px-12 py-5 rounded-full font-label-lg text-label-lg hover:shadow-xl hover:-translate-y-1 transition-all active:scale-95">
-                            Book an Online Session
-                        </button>
-<button class="bg-transparent border-2 border-soft-gold text-terracotta px-12 py-5 rounded-full font-label-lg text-label-lg hover:bg-soft-gold hover:text-white transition-all">
-                            View Pricing Plans
-                        </button>
+<a class="inline-block bg-terracotta text-white px-12 py-5 rounded-full font-label-lg text-label-lg hover:shadow-xl hover:-translate-y-1 transition-all active:scale-95" href="contact.html#booking">Book an Online Session</a>
+<a class="inline-block bg-transparent border-2 border-soft-gold text-terracotta px-12 py-5 rounded-full font-label-lg text-label-lg hover:bg-soft-gold hover:text-white transition-all" href="contact.html#booking">View Pricing Plans</a>
 </div>
 <p class="mt-10 font-label-md text-label-md text-on-surface-variant/60 italic">Free 15-minute discovery calls available for first-time seekers.</p>
 </div>
@@ -317,10 +307,10 @@
 <div>
 <h4 class="font-label-lg text-label-lg text-terracotta dark:text-soft-gold mb-6 uppercase tracking-widest">Connect</h4>
 <ul class="space-y-4">
-<li><a class="font-body-md text-body-md text-on-surface-variant dark:text-surface-variant hover:text-soft-gold transition-colors duration-300 block" href="#">Instagram</a></li>
-<li><a class="font-body-md text-body-md text-on-surface-variant dark:text-surface-variant hover:text-soft-gold transition-colors duration-300 block" href="#">Facebook</a></li>
-<li><a class="font-body-md text-body-md text-on-surface-variant dark:text-surface-variant hover:text-soft-gold transition-colors duration-300 block" href="#">LinkedIn</a></li>
-<li><a class="font-body-md text-body-md text-on-surface-variant dark:text-surface-variant hover:text-soft-gold transition-colors duration-300 block" href="#">YouTube</a></li>
+<li><a class="font-body-md text-body-md text-on-surface-variant dark:text-surface-variant hover:text-soft-gold transition-colors duration-300 block" href="index.html">Meet Veechi</a></li>
+<li><a class="font-body-md text-body-md text-on-surface-variant dark:text-surface-variant hover:text-soft-gold transition-colors duration-300 block" href="index.html#sanctuary">Sanctuary of Self</a></li>
+<li><a class="font-body-md text-body-md text-on-surface-variant dark:text-surface-variant hover:text-soft-gold transition-colors duration-300 block" href="retreats.html">Retreats</a></li>
+<li><a class="font-body-md text-body-md text-on-surface-variant dark:text-surface-variant hover:text-soft-gold transition-colors duration-300 block" href="corporate.html">Corporate</a></li>
 </ul>
 </div>
 <div>
@@ -328,7 +318,7 @@
 <ul class="space-y-4">
 <li><a class="font-body-md text-body-md text-on-surface-variant dark:text-surface-variant hover:text-soft-gold transition-colors duration-300 block" href="sessions.html">Online Sessions</a></li>
 <li><a class="font-body-md text-body-md text-on-surface-variant dark:text-surface-variant hover:text-soft-gold transition-colors duration-300 block" href="retreats.html">Retreats</a></li>
-<li><a class="font-body-md text-body-md text-on-surface-variant dark:text-surface-variant hover:text-soft-gold transition-colors duration-300 block" href="#">The Journal</a></li>
+<li><a class="font-body-md text-body-md text-on-surface-variant dark:text-surface-variant hover:text-soft-gold transition-colors duration-300 block" href="contact.html">Contact</a></li>
 <li><a class="font-body-md text-body-md text-on-surface-variant dark:text-surface-variant hover:text-soft-gold transition-colors duration-300 block" href="corporate.html">Corporate</a></li>
 </ul>
 </div>
@@ -337,50 +327,67 @@
 <p class="font-body-md text-body-md text-on-surface-variant dark:text-surface-variant mb-6">Receive soul-nourishing insights weekly.</p>
 <form class="flex flex-col gap-2">
 <input class="bg-warm-beige/50 border-none rounded-full px-6 py-3 focus:ring-1 focus:ring-soft-gold text-body-md font-body-md" placeholder="Email Address" type="email"/>
-<button class="bg-terracotta text-white rounded-full py-3 hover:bg-primary transition-all font-label-lg text-label-lg">Subscribe</button>
+<button class="bg-terracotta text-white rounded-full py-3 hover:bg-primary transition-all font-label-lg text-label-lg" type="submit">Subscribe</button>
 </form>
 </div>
 </div>
 <div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop mt-20 pt-8 border-t border-outline-variant/10 flex flex-col md:flex-row justify-between items-center gap-6">
-<span class="font-body-md text-body-md text-on-surface-variant/60">© 2024 Veechi Shahi. All rights reserved.</span>
+<span class="font-body-md text-body-md text-on-surface-variant/60">© 2026 Veechi Shahi. All rights reserved.</span>
 <div class="flex gap-8">
-<a class="font-label-md text-label-md text-on-surface-variant/60 hover:text-terracotta" href="#">Privacy Policy</a>
-<a class="font-label-md text-label-md text-on-surface-variant/60 hover:text-terracotta" href="#">Terms</a>
+<a class="font-label-md text-label-md text-on-surface-variant/60 hover:text-terracotta" href="contact.html">Contact</a>
+<a class="font-label-md text-label-md text-on-surface-variant/60 hover:text-terracotta" href="contact.html#booking">Book Session</a>
 </div>
 </div>
 </footer>
 <script>
+        // Shared drawer logic and homepage Sanctuary hash active state.
         const menuToggle = document.getElementById('menu-toggle');
         const closeDrawer = document.getElementById('close-drawer');
         const drawer = document.getElementById('drawer');
         const overlay = document.getElementById('drawer-overlay');
 
-        function toggleMenu() {
-            drawer.classList.toggle('translate-x-[-100%]');
-            overlay.classList.toggle('hidden');
-            setTimeout(() => overlay.classList.toggle('opacity-0'), 10);
+        function setDrawer(open) {
+            if (!drawer || !overlay) return;
+            drawer.classList.toggle('-translate-x-full', !open);
+            drawer.classList.toggle('translate-x-0', open);
+            drawer.setAttribute('aria-hidden', String(!open));
+            overlay.classList.toggle('hidden', !open);
+            document.body.classList.toggle('overflow-hidden', open);
+            if (menuToggle) menuToggle.setAttribute('aria-expanded', String(open));
         }
 
-        menuToggle.addEventListener('click', toggleMenu);
-        closeDrawer.addEventListener('click', toggleMenu);
-        overlay.addEventListener('click', toggleMenu);
+        menuToggle?.addEventListener('click', () => setDrawer(true));
+        closeDrawer?.addEventListener('click', () => setDrawer(false));
+        overlay?.addEventListener('click', () => setDrawer(false));
 
-        // Smooth scroll reveal observer
-        const observerOptions = {
-            threshold: 0.1
-        };
+        function updateHomeHashActiveState() {
+            const page = window.location.pathname.split('/').pop() || 'index.html';
+            if (page !== 'index.html') return;
+            const isSanctuary = window.location.hash === '#sanctuary';
+            const activeDesktop = 'text-terracotta font-semibold border-b-2 border-soft-gold font-label-lg text-label-lg';
+            const inactiveDesktop = 'text-on-surface-variant font-label-lg text-label-lg hover:text-terracotta transition-colors duration-300';
+            const activeMobile = 'flex items-center gap-4 bg-secondary-container text-on-secondary-container rounded-full mx-4 my-1 px-6 py-3 font-label-lg text-label-lg';
+            const inactiveMobile = 'flex items-center gap-4 text-on-surface-variant mx-4 my-1 px-6 py-3 hover:bg-warm-beige rounded-full transition-colors font-label-lg text-label-lg';
+            document.querySelectorAll('[data-nav="meet"], [data-nav="sanctuary"]').forEach((link) => {
+                const shouldBeActive = link.dataset.nav === (isSanctuary ? 'sanctuary' : 'meet');
+                link.className = (link.closest('#drawer') ? (shouldBeActive ? activeMobile : inactiveMobile) : (shouldBeActive ? activeDesktop : inactiveDesktop));
+            });
+        }
+        window.addEventListener('hashchange', updateHomeHashActiveState);
+        updateHomeHashActiveState();
 
-        const observer = new IntersectionObserver((entries) => {
+        // Preserve existing gentle reveal effects where present.
+        const observerOptions = { threshold: 0.1 };
+        const observer = 'IntersectionObserver' in window ? new IntersectionObserver((entries) => {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
-                    entry.target.classList.add('fade-in');
-                    observer.unobserve(entry.target);
+                    entry.target.classList.add('animate-in');
+                    entry.target.classList.add('visible');
                 }
             });
-        }, observerOptions);
-
-        document.querySelectorAll('section > div').forEach(div => {
-            observer.observe(div);
-        });
+        }, observerOptions) : null;
+        if (observer) {
+            document.querySelectorAll('.animate-fade-in-up, section > div').forEach(el => observer.observe(el));
+        }
     </script>
 </body></html>
