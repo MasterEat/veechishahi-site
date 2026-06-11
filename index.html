@@ -130,9 +130,9 @@
 </head>
 <body class="bg-background text-on-background atmospheric-gradient antialiased overflow-x-hidden">
 <!-- TopAppBar -->
-<header class="fixed top-0 w-full z-50 backdrop-blur-xl bg-ivory-base/80 dark:bg-deep-plum/80 shadow-sm">
-<nav class="flex justify-between items-center px-margin-mobile md:px-margin-desktop h-20 w-full mx-auto max-w-container-max">
-<div class="flex items-center gap-4">
+<header id="site-header" class="fixed top-0 w-full z-50 backdrop-blur-md bg-ivory-base/70 dark:bg-deep-plum/70 transition-all duration-300">
+<nav class="flex justify-between items-center px-margin-mobile md:px-10 lg:px-12 h-20 w-full mx-auto max-w-none">
+<div class="flex items-center gap-4 md:min-w-[220px]">
 <button class="md:hidden text-terracotta p-2 focus:outline-none" id="menu-toggle" aria-label="Open navigation menu" aria-controls="drawer" aria-expanded="false">
 <span class="material-symbols-outlined">menu</span>
 </button>
@@ -140,7 +140,7 @@
 <img alt="Veechi Shahi logo" class="h-9 w-auto object-contain" height="36" width="37" src="assets/logo.png"/>Veechi Shahi
 </a>
 </div>
-<div class="hidden md:flex items-center gap-8">
+<div class="hidden md:flex flex-1 items-center justify-center gap-9 lg:gap-10 mx-8">
 <a data-nav="meet" class="text-terracotta font-semibold border-b-2 border-soft-gold font-label-lg text-label-lg" href="index.html">Meet Veechi</a>
 <a data-nav="sanctuary" class="text-on-surface-variant font-label-lg text-label-lg hover:text-terracotta transition-colors duration-300" href="index.html#sanctuary">Sanctuary of Self</a>
 <a data-nav="retreats" class="text-on-surface-variant font-label-lg text-label-lg hover:text-terracotta transition-colors duration-300" href="retreats.html">Retreats</a>
@@ -148,7 +148,9 @@
 <a data-nav="corporate" class="text-on-surface-variant font-label-lg text-label-lg hover:text-terracotta transition-colors duration-300" href="corporate.html">Corporate</a>
 <a data-nav="contact" class="text-on-surface-variant font-label-lg text-label-lg hover:text-terracotta transition-colors duration-300" href="contact.html">Contact</a>
 </div>
+<div class="flex justify-end md:min-w-[160px]">
 <a class="bg-terracotta text-white px-6 py-2.5 rounded-full font-label-lg text-label-lg hover:bg-primary transition-all active:scale-95" href="contact.html#booking">Book Session</a>
+</div>
 </nav>
 </header>
 <!-- Navigation Drawer (Mobile) -->
@@ -181,19 +183,16 @@
 <div class="fixed inset-0 bg-black/20 z-[55] hidden backdrop-blur-sm" id="drawer-overlay"></div>
 <main class="pt-20">
 <!-- Hero Section -->
-<section class="relative min-h-[80vh] flex items-center overflow-hidden">
-<div class="absolute inset-0 z-0">
-<div class="absolute inset-0 bg-gradient-to-r from-background via-background/60 to-transparent z-10"></div>
-
-</div>
+<section class="relative min-h-[75vh] md:min-h-[85vh] flex items-center overflow-hidden bg-cover bg-center bg-no-repeat" style="background-image: url('assets/heroimage.png');">
+<div class="absolute inset-0 z-0 bg-black/[0.35]"></div>
 <div class="container mx-auto px-margin-mobile md:px-margin-desktop relative z-20 max-w-container-max">
-<div class="max-w-2xl">
-<span class="inline-block text-soft-gold font-label-lg text-label-lg uppercase tracking-widest mb-6">Experience Matters</span>
-<h1 class="font-display-lg-mobile md:font-display-lg text-display-lg-mobile md:text-display-lg leading-tight mb-8 text-deep-plum">Every Moment Is Alive With Possibility</h1>
-<p class="font-body-lg text-body-lg text-on-surface-variant mb-10 max-w-lg">Veechi Shahi is a global life and wellness coach dedicated to guiding individuals through profound personal and professional transformations.</p>
+<div class="max-w-[600px] text-left">
+<span class="inline-block text-soft-gold font-label-lg text-label-lg uppercase tracking-widest mb-6">MAKE YOUR LIFE</span>
+<h1 class="font-display-lg-mobile md:font-display-lg text-display-lg-mobile md:text-display-lg leading-tight mb-8 text-white drop-shadow-sm">A Celebration</h1>
+<p class="font-body-lg text-body-lg text-white/90 mb-10 max-w-lg drop-shadow-sm">360° coaching for body, mind, heart and soul.</p>
 <div class="flex flex-col sm:flex-row gap-4">
-<a class="bg-terracotta text-white px-10 py-4 rounded-full font-label-lg text-label-lg text-center hover:shadow-lg transition-all hover:translate-y-[-2px]" href="#about">Discover Her Journey</a>
-<a class="border-2 border-deep-plum text-deep-plum px-10 py-4 rounded-full font-label-lg text-label-lg text-center hover:bg-deep-plum hover:text-white transition-all" href="contact.html#booking">Start Your Path</a>
+<a class="bg-terracotta text-white px-10 py-4 rounded-full font-label-lg text-label-lg text-center hover:shadow-lg transition-all hover:translate-y-[-2px]" href="contact.html#booking">Book a Session</a>
+<a class="border-2 border-white text-white px-10 py-4 rounded-full font-label-lg text-label-lg text-center hover:bg-white hover:text-deep-plum transition-all" href="#sanctuary">Explore Programs</a>
 </div>
 </div>
 </div>
@@ -455,6 +454,17 @@
         }
         window.addEventListener('hashchange', updateHomeHashActiveState);
         updateHomeHashActiveState();
+
+        const siteHeader = document.getElementById('site-header');
+        function updateHeaderScrollState() {
+            if (!siteHeader) return;
+            const isScrolled = window.scrollY > 8;
+            siteHeader.classList.toggle('bg-ivory-base/85', isScrolled);
+            siteHeader.classList.toggle('shadow-sm', isScrolled);
+            siteHeader.classList.toggle('backdrop-blur-xl', isScrolled);
+        }
+        window.addEventListener('scroll', updateHeaderScrollState, { passive: true });
+        updateHeaderScrollState();
 
         // Preserve existing gentle reveal effects where present.
         const observerOptions = { threshold: 0.1 };
