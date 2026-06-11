@@ -124,9 +124,9 @@
 </head>
 <body class="bg-background text-on-surface font-body-md selection:bg-terracotta/20">
 <!-- TopAppBar -->
-<header class="fixed top-0 w-full z-50 backdrop-blur-xl bg-ivory-base/80 dark:bg-deep-plum/80 shadow-sm">
-<nav class="flex justify-between items-center px-margin-mobile md:px-margin-desktop h-20 w-full mx-auto max-w-container-max">
-<div class="flex items-center gap-4">
+<header id="site-header" class="fixed top-0 w-full z-50 backdrop-blur-md bg-ivory-base/70 dark:bg-deep-plum/70 transition-all duration-300">
+<nav class="flex justify-between items-center px-margin-mobile md:px-10 lg:px-12 h-20 w-full mx-auto max-w-none">
+<div class="flex items-center gap-4 md:min-w-[220px]">
 <button class="md:hidden text-terracotta p-2 focus:outline-none" id="menu-toggle" aria-label="Open navigation menu" aria-controls="drawer" aria-expanded="false">
 <span class="material-symbols-outlined">menu</span>
 </button>
@@ -134,15 +134,17 @@
 <img alt="Veechi Shahi logo" class="h-9 w-auto object-contain" height="36" width="37" src="assets/logo.png"/>Veechi Shahi
 </a>
 </div>
-<div class="hidden md:flex items-center gap-8">
-<a data-nav="meet" class="text-on-surface-variant font-label-lg text-label-lg hover:text-terracotta transition-colors duration-300" href="index.html">Meet Veechi</a>
-<a data-nav="sanctuary" class="text-on-surface-variant font-label-lg text-label-lg hover:text-terracotta transition-colors duration-300" href="index.html#sanctuary">Sanctuary of Self</a>
-<a data-nav="retreats" class="text-terracotta font-semibold border-b-2 border-soft-gold font-label-lg text-label-lg" href="retreats.html">Retreats</a>
-<a data-nav="sessions" class="text-on-surface-variant font-label-lg text-label-lg hover:text-terracotta transition-colors duration-300" href="sessions.html">Online Sessions</a>
-<a data-nav="corporate" class="text-on-surface-variant font-label-lg text-label-lg hover:text-terracotta transition-colors duration-300" href="corporate.html">Corporate</a>
-<a data-nav="contact" class="text-on-surface-variant font-label-lg text-label-lg hover:text-terracotta transition-colors duration-300" href="contact.html">Contact</a>
+<div class="hidden md:flex flex-1 items-center justify-center gap-9 lg:gap-10 mx-8">
+<a data-nav="meet" class="whitespace-nowrap text-on-surface-variant font-label-lg text-label-lg hover:text-terracotta transition-colors duration-300" href="index.html">Meet Veechi</a>
+<a data-nav="sanctuary" class="whitespace-nowrap text-on-surface-variant font-label-lg text-label-lg hover:text-terracotta transition-colors duration-300" href="index.html#sanctuary">Sanctuary of Self</a>
+<a data-nav="retreats" class="whitespace-nowrap text-terracotta font-semibold border-b-2 border-soft-gold font-label-lg text-label-lg" href="retreats.html">Retreats</a>
+<a data-nav="sessions" class="whitespace-nowrap text-on-surface-variant font-label-lg text-label-lg hover:text-terracotta transition-colors duration-300" href="sessions.html">Online Sessions</a>
+<a data-nav="corporate" class="whitespace-nowrap text-on-surface-variant font-label-lg text-label-lg hover:text-terracotta transition-colors duration-300" href="corporate.html">Corporate</a>
+<a data-nav="contact" class="whitespace-nowrap text-on-surface-variant font-label-lg text-label-lg hover:text-terracotta transition-colors duration-300" href="contact.html">Contact</a>
 </div>
+<div class="flex justify-end md:min-w-[160px]">
 <a class="bg-terracotta text-white px-6 py-2.5 rounded-full font-label-lg text-label-lg hover:bg-primary transition-all active:scale-95" href="contact.html#booking">Book Session</a>
+</div>
 </nav>
 </header>
 <!-- Navigation Drawer (Mobile) -->
